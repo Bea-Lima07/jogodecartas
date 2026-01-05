@@ -1,37 +1,87 @@
-# Jogo de Cartas 21 (Blackjack Simplificado)
+ Jogo de Cartas 21 (Blackjack Simplificado)
 
-Bem-vindo ao Jogo de Cartas 21, desenvolvido em Java com Spring Boot e Thymeleaf!
+Aplicação web desenvolvida em **Java com Spring Boot**, que simula uma versão simplificada do jogo Blackjack (21), com foco em **lógica de jogo, controle de turnos e regras de negócio**.
 
-## 🎮 Sobre o Projeto
+---
 
-Este projeto simula um jogo de cartas online, onde os jogadores devem somar cartas na mesa até atingir **exatamente 21** pontos. O objetivo é ser o jogador que mais vezes atinge 21 antes do final do baralho.
+ Visão Geral
 
-## 🃏 Regras do Jogo
+O Jogo de Cartas 21 é um sistema onde múltiplos jogadores competem para atingir **exatamente 21 pontos** por meio da soma das cartas jogadas na mesa. Cada vez que um jogador alcança 21, ele marca um ponto e uma nova rodada é iniciada.
 
-- O jogo permite de 2 a N jogadores (personalizável ao iniciar).
-- Cada jogador recebe 5 cartas na mão no início.
+O vencedor é o jogador que acumular **mais pontos ao final da partida**.
+
+---
+
+ Funcionalidades
+
+- Suporte a múltiplos jogadores (quantidade configurável)
+- Distribuição automática de cartas
+- Controle de turnos
+- Jogadas condicionadas às regras do jogo
+- Sistema de pontuação
+- Reinício automático da rodada ao atingir ou ultrapassar 21
+- Encerramento automático da partida
+
+---
+
+ Regras do Jogo (Resumo)
+
+- Cada jogador inicia com **5 cartas** na mão.
 - No seu turno, o jogador pode:
-    - **Jogar uma carta** da mão (clicando sobre ela).
-    - **Comprar carta** (apenas se não puder jogar nenhuma carta válida).
-    - **Passar a vez** (só se não tiver mais jogadas possíveis E já tiver comprado uma carta no turno).
-- As cartas são jogadas na **mesa central**, somando seus valores.
-    - **A soma das cartas da mesa não pode ultrapassar 21**.
-    - Se somar exatamente 21, o jogador ganha 1 ponto, a mesa é limpa e inicia uma nova rodada.
-    - Se ultrapassar 21, a mesa é limpa e ninguém ganha ponto.
+  - Jogar uma carta válida na mesa
+  - Comprar uma carta (se não houver jogadas válidas)
+  - Passar a vez (após comprar carta e não poder jogar)
+- A soma das cartas da mesa:
+  - **Não pode ultrapassar 21**
+  - Ao atingir **21**, o jogador marca 1 ponto e a mesa é resetada
+  - Ao ultrapassar **21**, a mesa é resetada sem pontuação
 - O jogo termina quando:
-    - Todos os jogadores ficam sem cartas na mão; **ou**
-    - O baralho não tem cartas suficientes para nova rodada.
-- Vence quem fizer **mais pontos** (quem mais vezes atingir 21).
+  - Os jogadores ficam sem cartas **ou**
+  - O baralho não possui cartas suficientes
+- Vence quem obtiver **mais pontos**
 
-### Valores das Cartas
-- A = 11 pontos (ou 1 se ultrapassar 21)
-- K, Q, J = 10 pontos
-- 2-10 = valor nominal
+Valores das Cartas
+- Ás (A): 11 pontos (ou 1 ponto se ultrapassar 21)
+- Figuras (K, Q, J): 10 pontos
+- Cartas numéricas (2–10): valor nominal
 
-## 🚀 Como Executar Localmente
+---
 
-1. **Clone este repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/jogodecartas.git
-   cd jogodecartas
+ Tecnologias Utilizadas
+
+- Java
+- Spring Boot
+- Thymeleaf
+- HTML5
+- CSS3
+- JavaScript
+- Docker (deploy)
+- Render (hospedagem)
+
+---
+
+ Aplicação em Produção
+
+🔗 **Link de acesso:**  
+
+Para acessar o jogo, cole o link a seguir diretamento no navegador:
+https://jogodecartas-dtux.onrender.com/
+
+> Obs.: A aplicação está hospedada em plano gratuito e pode levar alguns segundos para iniciar no primeiro acesso.
+
+---
+
+ Contexto Acadêmico
+
+Projeto desenvolvido com fins acadêmicos no curso de **Engenharia de Software**, com foco em:
+- Programação Orientada a Objetos
+- Lógica de negócio
+- Arquitetura de aplicações web
+- Integração entre backend e frontend
+
+---
+
+**Beatriz Rodrigues Lima**  
+Estudante de Engenharia de Software  
+🔗 GitHub: https://github.com/Bea-Lima07
 
